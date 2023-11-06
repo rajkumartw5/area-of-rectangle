@@ -21,4 +21,10 @@ public class Square {
         return true;
     }
 
+    public double calculatePerimeter() throws NonNegativeNumber {
+        if(isValid(side)) {
+            return 4 * side;
+        }
+        throw new NonNegativeNumber();
+    }
 }

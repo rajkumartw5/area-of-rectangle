@@ -17,4 +17,10 @@ public class SquareTest {
         Square square = new Square(-5);
         assertThrows(NonNegativeNumber.class, () -> square.calculateArea());
     }
+
+    @Test
+    public void testPerimeterOfSquareWithPositiveNumbers() throws NonNegativeNumber {
+        Square square = new Square(5);
+        assertEquals(20, square.calculatePerimeter());
+    }
 }
