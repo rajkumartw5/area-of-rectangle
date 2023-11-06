@@ -19,8 +19,9 @@ public class RectangleTest {
     }
 
     @Test
-    public void testCalculatePerimeter() {
+    public void testCalculatePerimeter() throws NonNegativeNumber {
         Rectangle rectangle = new Rectangle();
         assertEquals(24, rectangle.calculatePerimeter(5, 7));
     }
+
 }
