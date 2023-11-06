@@ -9,4 +9,8 @@ public class Rectangle {
         else
             return (length*breadth);
     }
+
+    public double calculatePerimeter(double length, double breadth) {
+        return 2 * (length + breadth);
+    }
 }

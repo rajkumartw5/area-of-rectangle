@@ -9,12 +9,18 @@ public class RectangleTest {
     @Test
     public void testAreaOfRectangle() throws NonNegativeNumber {
         Rectangle rectangle = new Rectangle();
-        assertEquals(rectangle.calculateArea(5, 7), 35);
+        assertEquals(35, rectangle.calculateArea(5, 7));
     }
 
     @Test
     public void testNonNegativeNumbers() {
         Rectangle rectangle = new Rectangle();
         assertThrows(NonNegativeNumber.class, () -> rectangle.calculateArea(-5, 7));
+    }
+
+    @Test
+    public void testCalculatePerimeter() {
+        Rectangle rectangle = new Rectangle();
+        assertEquals(24, rectangle.calculatePerimeter(5, 7));
     }
 }
